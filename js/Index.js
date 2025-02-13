@@ -31,10 +31,10 @@ const addExpense = () => {
       expenseDetails_Amount.appendChild(paraAmount);
       paraDate.innerHTML = `${dateName.value.trim()} `;
       expenseDate.appendChild(paraDate);
-        if (window.innerWidth <= 768) {
-          alert("You are using a mobile device");
+        // if (window.innerWidth <= 768) {
+        //   alert("You are using a mobile device");
             
-        }
+        // }
       let expenses = {
         name: productName.value.trim(),
         amount: Amount.value.trim(),

@@ -121,6 +121,12 @@
         flex-direction: column;
     }
     #name-asset{
-        width: 60%;
+        width: 80%;
+    }
+    #amount-asset{
+        width: 40%;
+    }
+    .date-amount{
+        display: block;
     }
 }
