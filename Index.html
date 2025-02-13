@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expense Tracker</title>
+    <meta name="description" content="This is a simple expense tracker that helps you keep track of your expenses">
+    <meta name="keywords" content="Expense, Tracker, Expense Tracker, Expense Manager, Expense Management">
+    <meta name="author" content="Onyia Miracle">
+    <link rel="stylesheet" href="css/Index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Playwrite+ZA+Guides&family=Sansita+Swashed:wght@300..900&family=Signika+Negative:wght@300..700&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card_title">
+            <h2>Expense Tracker</h2>
+        </div>
+        <div class="expense_Container">
+            <div class="balanceCard">
+                <form action="" id="expenseForm">
+                    <div class="assestName">
+                        <label for="name-asset">Product Name:</label>
+                        <input type="text" name="product-name" id="name-asset" placeholder="Product Name">
+                    </div>
+                    <div class="date-amount">
+                        <div class="assetDate">
+                            <label for="date-asset">Date:</label>
+                            <input type="date" name="date" id="date-asset" placeholder="Enter Date">
+                        </div>
+                        <div class="assetAmount">
+                            <label for="amount-asset">Amount:</label>
+                            <input type="number" name="number" id="amount-asset" placeholder="Enter Amount(₦)">
+                        </div>
+                    </div>
+                    <div class="expenseButton">
+                        <button type="submit">Add Expense</button>
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+        <div class="expense_Details">
+            <div class="expenseCriterias">
+                <div class="expenseName">
+                    <h4 class="nameCriteria">
+                        Name
+                    </h4>
+                    <!-- <div class="details">
+                        <p>Hp laptop -247X</p>
+                    </div> -->
+                </div>
+                <div class="expenseAmount">
+                    <h4 class="amountCriteria">
+                        Amount
+                    </h4>
+                   
+                    
+                    <!-- <div class="details">
+                        <p>₦25, 000.00</p>
+                    </div> -->
+                </div>
+                <div class="expenseDate">
+                    <h4 class="dateCriteria">
+                        Date
+                    </h4>
+                  
+                    <!-- <div class="details">
+                        <p>7/2/2025</p>
+                    </div> -->
+                </div>
+            </div>
+       <div class="expenseMain">
+            <div class="expenseInfo_Details">
+                <!-- <div class="expenseDetails_Name">
+                                <p></p>
+                            </div>
+                            <div class="expenseDetails_Amount">
+                                <p></p>
+                            </div>
+                            <div class="expenseDetails_Date">
+                            <p></p>
+                            </div> -->
+            </div>
+       </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/Index.js"></script>
+</html>
