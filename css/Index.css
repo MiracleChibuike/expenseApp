@@ -111,23 +111,24 @@
         overflow-x: scroll;
     } */
      .expenseCriterias{
-        /* display: grid;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 30px; */
-        display: flex;
+        column-gap: 30px;
+        /* display: flex;
         justify-content: space-between;
-        overflow-x: scroll;
+        overflow-x: scroll; */
         /* width: 50px; */
      }
 
-    .assestName{
+    .assestName, .assetDate, .assetAmount{
         display: flex;
         flex-direction: column;
+        padding: 3px 10px;
     }
     #name-asset{
         width: 80%;
     }
-    #amount-asset{
+    #amount-asset, #date-asset{
         width: 40%;
     }
     .date-amount{
