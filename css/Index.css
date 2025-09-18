@@ -1,137 +1,155 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Mulish", serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', serif;
 }
 
-:root{
-      --primary-dark: #020202;
+:root {
+  --primary-dark: #020202;
   --clr-logo: rgba(0, 121, 107, 1);
-  --clr-light-green : rgba(12, 188, 139, 0.4);
+  --clr-light-green: rgba(12, 188, 139, 0.4);
   --green-deem: rgba(12, 188, 139, 0.1);
   --primary-white: #fff;
   --clr-white-semi: #f1f1f1;
   --gradient-color: rgba(31, 30, 30, 0.6);
   --clr-shadow-light: rgba(0, 0, 0, 0.25);
-
 }
-.container{
-    padding: 20px 15px;
+.container {
+  padding: 20px 15px;
 }
-.card_title{
-    text-align: center;
-    margin: 20px 0;
+.card_title {
+  text-align: center;
+  margin: 20px 0;
 }
-.expense_Container{
-    background: var(--clr-logo);
-    box-shadow: 0 0 10px var(--clr-shadow-light);
-    border-radius: 10px;
-    padding: 15px 10px;
-    color: var(--primary-white);
-    margin: 30px 0 0 0;
-}
-/* #expenseForm{
-    line-height: 5;
-} */
-.assestName, .assetDate, .assetAmount{
-    margin: 20px 0;
-}
-.assestName input, .assetDate input, .assetAmount input{
-    padding: 10px 5px;
-    outline: none;
-    border: 1px solid var(--clr-light-green);
-    border-radius: 5px;
-    margin: 10px 0 0 0;
-}
-.assestName input:focus, .assetDate input:focus, .assetAmount input:focus{
-    outline: 3px solid var(--clr-light-green);
-    transition: .2s;
-}
-#name-asset{
-    width: 20%;
-}
-.date-amount{
-    display: flex;
-    justify-content: space-between;
+.expense_Container {
+  background: var(--clr-logo);
+  box-shadow: 0 0 10px var(--clr-shadow-light);
+  border-radius: 10px;
+  padding: 15px 10px;
+  color: var(--primary-white);
+  margin: 30px 0 0 0;
 }
 
-.expenseButton{
-    text-align: center;
-    margin: 25px 0 0 0;
+#expenseForm {
+  padding: 10px 20px;
 }
-.expenseButton button{
-    padding: 12px 20px;
-    width: 50%;
-    border: none;
-    background: var(--primary-dark);
-    color: var(--clr-white-semi);
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 2px var(--primary-dark);
+.assestName,
+.assetDate,
+.assetAmount {
+  margin: 20px 0;
 }
-.expenseButton button:hover{
-    transition: .2s ease;
-    background: var(--primary-white);
-    color: var(--primary-dark);
-    border: none;
-    box-shadow: 0 0 5px var(--clr-logo);
-    font-weight: bold;
+.assestName input,
+.assetDate input,
+.assetAmount input {
+  display: block;
+  padding: 10px 5px;
+  width: 20%;
+  outline: none;
+  border: 1px solid var(--clr-light-green);
+  border-radius: 5px;
+  margin: 10px 0 0 0;
 }
-
-.expenseCriterias{
-    display: flex;
-    justify-content: space-between;
+.assestName input:focus,
+.assetDate input:focus,
+.assetAmount input:focus {
+  outline: 3px solid var(--clr-light-green);
+  transition: 0.2s;
 }
-.expenseName, .expenseAmount, .expenseDate{
-    margin: 10px 0;
+#name-asset {
+  width: 20%;
 }
-.expenseName p, .expenseAmount p, .expenseDate p{
-    margin: 10px 0;
-    /* background: var(--clr-white-semi); */
-    /* border-bottom: 2px solid var(--clr-white-semi); */
+.date-amount {
+  display: flex;
+  justify-content: space-between;
 }
 
-.expense_Details{
-    margin: 30px 0;
+.expenseButton {
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+.expenseButton button {
+  padding: 12px 20px;
+  width: 50%;
+  border: none;
+  background: var(--primary-dark);
+  color: var(--clr-white-semi);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 2px var(--primary-dark);
+}
+.expenseButton button:hover {
+  transition: 0.2s ease;
+  background: var(--primary-white);
+  color: var(--primary-dark);
+  border: none;
+  box-shadow: 0 0 5px var(--clr-logo);
+  font-weight: bold;
 }
 
-.expenseInfo_Details{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+.expenseCriterias {
+  display: flex;
+  justify-content: space-between;
+}
+.expenseName,
+.expenseAmount,
+.expenseDate {
+  margin: 10px 0;
+}
+.expenseName p,
+.expenseAmount p,
+.expenseDate p {
+  margin: 10px 0;
+  /* background: var(--clr-white-semi); */
+  /* border-bottom: 2px solid var(--clr-white-semi); */
+}
+
+.expense_Details {
+  margin: 30px 0;
+}
+
+.expenseInfo_Details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 /* .details{
     margin: 10px 0;
 } */
 
 @media screen and (min-width: 0) and (max-width: 850px) {
-    /* .expenseName, .expenseAmount, .expenseDate{
+  /* .expenseName, .expenseAmount, .expenseDate{
         width: 100%;
         overflow-x: scroll;
     } */
-     .expenseCriterias{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 30px;
-        /* display: flex;
+  .expenseCriterias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    /* display: flex;
         justify-content: space-between;
         overflow-x: scroll; */
-        /* width: 50px; */
-     }
+    /* width: 50px; */
+  }
 
-    .assestName, .assetDate, .assetAmount{
-        display: flex;
-        flex-direction: column;
-        padding: 3px 10px;
-    }
-    #name-asset{
-        width: 80%;
-    }
-    #amount-asset, #date-asset{
-        width: 40%;
-    }
-    .date-amount{
-        display: block;
-    }
+  .assestName,
+  .assetDate,
+  .assetAmount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3px 10px;
+    margin: auto;
+  }
+  #name-asset {
+    width: 80%;
+  }
+  #amount-asset,
+  #date-asset {
+    width: 40%;
+  }
+  .date-amount {
+    display: block;
+  }
 }
